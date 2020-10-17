@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>email validation</title>
+     
+    </head>
+    <body>
+    <center>
+        <h1>Email Validation</h1>
+        <h2 id="pk">Enter email</h2>
+        
+    </center>
+    <script>
+        
+        function checkEmail(x)
+        {
+            var a=x.indexOf("@");
+            
+            var b=x.indexOf(".");
+            
+            var c=x.indexOf(" ");
+            
+            var d=x.indexOf(".",a);
+           
+            var e=x.lastIndexOf("@");
+            
+            var f=x.lastIndexOf(".");
+            
+            var g=x.lastIndexOf(".",a);
+            
+            
+            
+            if( a===0 || a===-1 || a!==e  || b===0 || b===-1 || c!==-1  ||d===a+1  || f+1===x.length    || g===a-1 )
+            {
+                alert("Please check Your Email ");
+            }
+            
+            else
+                document.getElementById("pk").innerHTML="Correct Email";
+            
+            
+        }
+    </script>
+    <form>
+        
+        Enter Email Id<input type="text"  onblur="checkEmail(this.value)">
+        
+    </form>
+    </body>
+</html>

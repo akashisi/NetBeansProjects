@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <link rel="stylesheet" type="text/css" href="basepasnd.css">
+        <title>data</title>
+     
+    </head>
+    <body bgcolor="cream">
+        
+        
+         <center>
+           <h4><marquee behaviour="alternate" scrolldelay="10">INDIAN  STATISTICAL  INSTITUTE </marquee><br> GIRIDIH JHARKHAND</h4><br>
+            </center>
+        
+        
+      <form action="studentjsp.jsp">
+        <p>
+              First Name::
+                 <input type="text" name="firstName" size="30" maxlength="30">
+              Middle Name::
+                 <input type="text" name="middleName" size="30" maxlength="30">
+              Last Name::
+              <input type="text" name="lastName" size="30" maxlength="30">
+              <br><br>
+                Gender
+            <input type="radio" name="gender" value="male" >Male
+            <input type="radio" name="gender" value="female">Female<br><br>
+            
+        </p>    
+            <p>DATE OF BIRTH</p>
+            <input type="date" name="dob">
+            <p>FATHER'S NAME:</p>
+            <input type="text" name="fatherName">
+            <p> MOTHER'S NAME:</p>
+            <input type="text" name="motherName"> 
+            <p>Email Address:</p>
+            <input type="email" name="email">
+            <p>Mobile Number:</p>
+            <input type="tel" maxlength="10" required="" size="10" name="mobile">
+            <br>
+            
+            <p>Select Your Country</p>
+            <select name="country">
+                <option selected="">--  Select  --</option>
+                <option>Afganistaan</option>
+                <option>Australiya</option>
+                <option>Bangladesh</option>
+                <option>China</option>
+                <option>England</option>
+                <option>France</option>
+                <option>India</option>
+                <option>Pakistan</option>
+                <option>Nepal</option>
+                <option>Singapur</option>
+                <option>United States of America</option>
+                <option>South Africa</option>
+                
+                
+            </select>
+            
+             <br>
+             <p>Select Your State</p>
+             <select name="state">
+                 <option selected=""> --  select  --</option>
+                 <option>Andhra Pradesh</option>
+                 <option>Assam</option>
+                  <option>Bihar</option>
+                   <option>Jharkhand</option>
+                   <option>Haryana</option>
+                    <option>Punjab</option>
+                     <option>Uttar Pradesh</option>
+                      <option>West Bengal</option>
+             </select>
+             <p>Enter the address</p>
+             <textarea rows="11" cols="40" name="description" placeholder=" Enter description here..."></textarea>
+             
+             <p>Enter Pincode</p>
+             <input type="tel" name="pincode" maxlength="6" size="6">
+        <p>   
+              click here to submit Data::
+              <input type="submit" value="SUBMIT">
+              
+        </p>
+      </form>
+    </body>
+</html>

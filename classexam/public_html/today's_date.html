@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>DATE</title>
+    </head>
+    <body  bgcolor="black+cream">
+        <h1>TODAY'S DATE IS::</h1>
+        
+     <script>   
+        var d,i;
+        d=new Date();
+        var y= new Array("SUNDAY","MONDAY","TUESDAY","WEDNESDAY","THURSDAY","FRIDAY","SATURDAY");
+        var x= new Array ("JAN","FEB","MAR","APR","MAY","JUN","JUL","AUG","SEP","OCT","NOV","DEC");
+         
+          document.write(y[d.geDay()] + ",");
+        document.write(x[d.getMonth()] + " ,");
+        document.write(d.getDate());
+        document.write(" , ");
+       
+        document.write(d.getFullYear());
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+     </script>
+    </body>
+</html>
